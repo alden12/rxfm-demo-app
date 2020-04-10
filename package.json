@@ -1,14 +1,14 @@
 {
-  "name": "rxfm-starter-app",
+  "name": "rxfm-demo-app",
   "version": "0.0.0",
   "author": "",
-  "description": "Starter app for RxFm JavaScript Framework.",
+  "description": "Demo app for RxFM JavaScript Framework.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alden12/rxfm-starter-app.git"
+    "url": "git+https://github.com/alden12/rxfm-demo-app.git"
   },
-  "homepage": "https://https://github.com/alden12/rxfm-starter-app",
+  "homepage": "https://https://github.com/alden12/rxfm-demo-app",
   "main": "dist/app.bundle.js",
   "types": "dist/index.d.ts",
   "private": true,
