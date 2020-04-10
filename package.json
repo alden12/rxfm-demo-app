@@ -1,0 +1,44 @@
+{
+  "name": "rxfm-starter-app",
+  "version": "0.0.0",
+  "author": "",
+  "description": "Starter app for RxFm JavaScript Framework.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alden12/rxfm-starter-app.git"
+  },
+  "homepage": "https://https://github.com/alden12/rxfm-starter-app",
+  "main": "dist/app.bundle.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "test": "karma start"
+  },
+  "dependencies": {
+    "rxfm": "0.0.1",
+    "rxjs": "6.5.2"
+  },
+  "devDependencies": {
+    "@types/karma": "3.0.2",
+    "@types/jasmine": "3.3.12",
+    "@webpack-cli/init": "^0.2.2",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "jasmine-marbles": "0.5.0",
+    "karma": "4.1.0",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "2.0.1",
+    "karma-typescript": "4.0.0",
+    "ts-loader": "5.4.5",
+    "typescript": "3.7.5",
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1",
+    "webpack-dev-server": "3.3.1",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^4.0.4",
+    "style-loader": "1.1.3",
+    "tslint": "6.0.0"
+  }
+}
