@@ -1,26 +1,11 @@
-import { div, children, classes, button, event, dispatch, store } from 'rxfm';
-import { map } from 'rxjs/operators';
-import { storeSubject, incrementCounterAction, counterSelector } from '../store';
+import { div, children, classes, store } from 'rxfm';
+import { storeSubject } from '../store';
+import { todoList } from './todo-list/todo-list';
 
 import './app.css';
 
-const buttonText = () => counterSelector.pipe(
-  map(counter => counter ? `Clicked ${counter} times!` : 'Click Me!'),
-)
-
-const clickCounter = () => button().pipe(
-  children(buttonText()),
-  event(
-    'click',
-    dispatch(incrementCounterAction),
-  ),
-);
-
 export const app = () => div().pipe(
   classes('app'),
-  children(
-    'Hello, world!',
-    clickCounter(),
-  ),
+  children(todoList()),
   store(storeSubject),
 );
